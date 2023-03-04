@@ -7,5 +7,34 @@ f=open("vaidu.txt","rt")        #Read-text mode is the default mode if we dont w
 # for line in f:
 #     print(line)
 # print(f.readline())
-print(f.readlines())            #This will store all line in the list and print
-f.close()
+#print(f.readlines())            #This will store all line in the list and print
+#f.close()
+
+# f = open("vaiduu.txt", "w")
+# a = f.write("Viadu will became great hacker of the history\n")
+# print(a)
+# f.close()
+
+# f = open("vaiduu.txt", "a")
+# a = f.write("Viadu will became great hacker of the history\n")
+# print(a)
+# f.close()
+
+# f = open("vaiduu.txt", "w")
+# a = f.write("Viadu will became great hacker of the history\n")
+# print(a)
+# f.close()
+
+# handle read and write both
+# f = open("vaiduu.txt", "r+")
+# print(f.read())
+# f.write("As soon as")
+
+f=open("vaiduu.txt")
+# print(f.tell())             # tell() function give information about character position of file function 'f'
+print(f.readline())
+f.seek(10)                     # seek() function will reset the position of file function f to the given position in argument
+# print(f.tell())
+print(f.readline())
+# print(f.tell())
+
