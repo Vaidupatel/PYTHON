@@ -20,6 +20,7 @@
     and find the global variable and give permission to change the global variable,
     but hear x is global for all nested function of vaidu() but it's not global variable of program
 """
+x=89
 def vaidu():
     x = 200
 
@@ -33,3 +34,4 @@ def vaidu():
 
 
 vaidu()
+print(x)
