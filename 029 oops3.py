@@ -1,3 +1,4 @@
+# SELF & __INIT__
 class Employee:
    no_of_leaves = 8
    def __init__(self, aname, asalary, arole):
