@@ -1,3 +1,4 @@
+# CLASS METHOD AS ALTERNATE CONSTRUCTOR
 class Eployee:
     no_of_leaves = 8
     def __init__(self, anme, aslary, arole):
