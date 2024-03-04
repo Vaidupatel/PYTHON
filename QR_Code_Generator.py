@@ -1,5 +1,5 @@
 import qrcode 
-# from PIL import Image
+
 
 def qr_generate(data, fill_color="black", back_color="white", border_size=4, box_size=100, image_name="MyQRCode", extension="png"):
 
