@@ -1,3 +1,16 @@
+""" 
+This is some conditions to validate the email
+
+a-z
+0-9
+. _ occure ones
+@ occure one
+. 2nd or 3rd from last
+"""
+
+
+# First approach
+"""
 email = input("Enter your email\n")  # Example: g@g.in
 
 valid_chars = ["_", ".", "@"]
@@ -29,3 +42,18 @@ if errors:
         print("-", error)
 else:
     print("Email is correct!!")
+
+
+"""
+
+# Or it can be done using the regex
+
+import re
+email_condition = r"^[a-z]+[\\._]?[a-z 0-9]+[@]\w+[.]\w{2,3}$"
+
+user_email = input("Please enter your email address\n")
+
+if re.search(email_condition, user_email):
+    print("Valid email address")
+else:
+    print("Invalid email address")
